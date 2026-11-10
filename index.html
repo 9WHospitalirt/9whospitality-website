@@ -12,9 +12,11 @@
 <meta property="og:title" content="9W Hospitality — Foodcourts. Brand Operations. Consulting." />
 <meta property="og:description" content="We build and run foodcourts, operate brands as their partner, and consult on food businesses. 13 locations · 35+ brand counters · since 2013." />
 <meta property="og:url" content="https://www.9whospitality.com/" />
-<meta property="og:image" content="https://www.9whospitality.com/og-cover.jpg" />
+<meta property="og:image" content="https://9whospitalirt.github.io/9whospitality-website/og-cover.jpg" />
 <meta property="og:site_name" content="9W Hospitality" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <link rel="canonical" href="https://www.9whospitality.com/" />
 <link rel="icon" href="assets/logos/9w-hospitality.svg" type="image/svg+xml">
 <link rel="icon" href="assets/logos/favicon-32.png" sizes="32x32" type="image/png">
@@ -23,7 +25,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@500;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
 <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+<script>window.lucide=window.lucide||{createIcons:function(){}};</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"9W Hospitality Group","alternateName":"9W Hospitality Pvt Ltd","url":"https://www.9whospitality.com","logo":"https://www.9whospitality.com/assets/logos/9w-hospitality.svg","foundingDate":"2013","founders":[{"@type":"Person","name":"Sarbeshwar Singh Chadha","jobTitle":"Co-Founder & Director"},{"@type":"Person","name":"Sirjan Singh Chadha","jobTitle":"Co-Founder & Director"}],"address":{"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"},"sameAs":["https://www.instagram.com/9w_hospitality"],"contactPoint":[{"@type":"ContactPoint","email":"info@9whospitality.com","contactType":"sales","areaServed":"IN"}],"award":["ET F&B Conclave Business Leaders 2024 — Sarbeshwar Singh Chadha","Hindustan Times Restaurateur of the Year 2025 — Sirjan Singh Chadha"]}
 </script>
@@ -304,10 +308,10 @@ a{color:inherit;text-decoration:none;}
 .socials{display:flex;gap:10px;}
 .socials a{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;transition:all .25s;color:rgba(255,255,255,.7);}
 .socials a:hover{background:var(--brand);border-color:var(--brand);color:#fff;}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease;}
-.reveal.visible{opacity:1;transform:translateY(0);}
-.reveal-stagger>*{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease;}
-.reveal-stagger.visible>*{opacity:1;transform:translateY(0);}
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease;}
+.js .reveal.visible{opacity:1;transform:translateY(0);}
+.js .reveal-stagger>*{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease;}
+.js .reveal-stagger.visible>*{opacity:1;transform:translateY(0);}
 .reveal-stagger.visible>*:nth-child(1){transition-delay:.04s;}
 .reveal-stagger.visible>*:nth-child(2){transition-delay:.12s;}
 .reveal-stagger.visible>*:nth-child(3){transition-delay:.2s;}
@@ -410,6 +414,48 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media (max-width:980px){.verticals,.models,.faq-wrap{grid-template-columns:minmax(0,1fr);}.faq-wrap{gap:28px;}.model{border-right:none;border-bottom:1px solid rgba(255,255,255,.1);}.model:last-child{border-bottom:none;}.video-grid{grid-template-columns:1fr 1fr;}}
 @media (max-width:640px){.aud-grid{grid-template-columns:minmax(0,1fr);}.video-grid{grid-template-columns:1fr 1fr;gap:10px;}.video-meta .t{font-size:16px;}.video-meta .s{display:none;}.video-play{width:44px;height:44px;}}
 @media (max-width:640px){.brand-name .small{font-size:8px;letter-spacing:.12em;white-space:nowrap;}}
+
+/* v3 */
+.brand-strip{background:var(--paper);border-bottom:1px solid var(--line);padding:18px 0;}
+.brand-strip .container{display:flex;align-items:center;gap:28px;flex-wrap:wrap;}
+.brand-strip .lbl{font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:.28em;color:var(--brand-deep);text-transform:uppercase;white-space:nowrap;}
+.brand-strip ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 26px;margin:0;padding:0;}
+.brand-strip li{font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:.08em;color:var(--ink-2);text-transform:uppercase;opacity:.82;}
+.founder-block,.founder-block.reverse{grid-template-columns:minmax(0,.62fr) minmax(0,1.6fr);align-items:start;gap:48px;}
+.founder-block.reverse .founder-photo{order:0;}.founder-block.reverse .founder-text{order:1;}
+.founder-photo{aspect-ratio:1/1;background:var(--ink);border:none;align-items:center;}
+.founder-photo img.shield-bg{width:38%;opacity:1;margin:0 auto 18%;}
+.founder-photo .namecard{color:#fff;font-size:clamp(22px,2.4vw,32px);letter-spacing:.14em;padding:18px;}
+.next-steps{margin-top:36px;padding-top:28px;border-top:1px solid var(--line);}
+.next-steps h4{font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:.28em;color:var(--brand-deep);text-transform:uppercase;margin-bottom:16px;}
+.next-steps ol{list-style:none;counter-reset:n;display:grid;gap:14px;margin:0;padding:0;}
+.next-steps li{counter-increment:n;position:relative;padding-left:44px;font-size:14.5px;color:var(--ink-2);line-height:1.55;}
+.next-steps li::before{content:counter(n);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:14px;display:grid;place-items:center;}
+.form-status a{color:inherit;font-weight:600;}
+.mbar{display:none;}
+@media (max-width:980px){.founder-block,.founder-block.reverse{grid-template-columns:minmax(0,1fr);gap:24px;}.founder-photo{aspect-ratio:auto;flex-direction:row;align-items:center;justify-content:flex-start;gap:16px;padding:16px 20px;}.founder-photo img.shield-bg{width:44px;margin:0;}.founder-photo .placeholder,.founder-photo .namecard{position:static;padding:0;font-size:22px;text-align:left;}}
+@media (max-width:760px){
+  .mbar{display:grid;grid-template-columns:auto 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:80;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(14,15,18,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.1);transform:translateY(110%);transition:transform .3s;}
+  .mbar.show{transform:none;}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:46px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:0 20px;}
+  .mb-call{color:#fff;border:1px solid rgba(255,255,255,.3);}
+  .mb-go{background:var(--brand-deep);color:#fff;}
+  .footer{padding-bottom:84px;}
+  .brand-strip ul{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-20px;padding-right:20px;}
+  .brand-strip ul::-webkit-scrollbar{display:none;}
+  .brand-strip li{white-space:nowrap;font-size:15px;}
+  .brand-strip .container{gap:10px;}
+}
+@media (max-width:640px){
+  .section{padding:64px 0;}
+  .loc-grid,.process-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-left:-20px;margin-right:-20px;padding:4px 20px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+  .loc-grid::-webkit-scrollbar,.process-grid::-webkit-scrollbar{display:none;}
+  .loc-grid>*{flex:0 0 84%;scroll-snap-align:center;}
+  .process-grid>*{flex:0 0 72%;scroll-snap-align:center;}
+  .loc-section .section-lede::after,.process-section .section-lede::after{content:"Swipe to see all →";display:block;margin-top:14px;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brand-deep);}
+}
+@media (max-width:980px){.nav,.nav.scrolled{backdrop-filter:none;-webkit-backdrop-filter:none;}.nav.scrolled{background:#fff;}.nav-links.open{height:100dvh;}}
+@media (max-width:980px){.menu-toggle{position:relative;z-index:101;}.menu-toggle[aria-expanded="true"],.nav.scrolled .menu-toggle[aria-expanded="true"]{color:#fff;}}
 </style>
 </head>
 <body>
@@ -473,6 +519,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
     <span><strong>HINDUSTAN TIMES</strong>Restaurateur of the Year — Sirjan Singh Chadha</span>
     <span><strong>ECONOMIC TIMES F&amp;B CONCLAVE</strong>Business Leaders 2024 — Sarbeshwar Singh Chadha</span>
   </div>
+</section>
+
+<section class="brand-strip" aria-label="Brands at our foodcourts">
+  <div class="container"><span class="lbl">Brands at our courts</span><ul><li>KFC</li><li>Burger King</li><li>Subway</li><li>Baskin Robbins</li><li>Barista</li><li>Texas Smokehouse</li><li>Baba's Chicken</li><li>Chicago Pizza</li><li>Giani's</li><li>Pita Pit</li></ul></div>
 </section>
 
 <section class="section" id="about">
@@ -614,48 +664,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   </div>
 </section>
 
-<section class="section videos-section" id="videos">
-  <div class="container">
-    <div class="reveal" style="max-width:780px">
-      <span class="eyebrow">Society in Motion</span>
-      <h2 class="section-title">See the foodcourts <em>in action.</em></h2>
-      <p class="section-lede">On-the-floor footage from five operating Society Foodcourts. Tap any tile to play.</p>
-    </div>
-    <div class="video-grid reveal-stagger">
-      <div class="video-tile" data-video="assets/videos/society_video_1.mp4" data-poster="assets/posters/society_video_1.jpg">
-        <img src="assets/posters/society_video_1.jpg" alt="The Society Foodcourt — Elysian Tower, Ludhiana" loading="lazy"/>
-        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
-        <div class="video-overlay"><span class="video-tag">01 · Elysian Tower</span><div class="video-meta"><div class="t">The Society · Elysian Tower</div><div class="s">Ludhiana · Urban Premium</div></div></div>
-      </div>
-      <div class="video-tile" data-video="assets/videos/society_video_2.mp4" data-poster="assets/posters/society_video_2.jpg">
-        <img src="assets/posters/society_video_2.jpg" alt="The Society Foodcourt — Patiala" loading="lazy"/>
-        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
-        <div class="video-overlay"><span class="video-tag">02 · Patiala</span><div class="video-meta"><div class="t">The Society · Patiala</div><div class="s">City Centre · Home of Badmaash Kebabi</div></div></div>
-      </div>
-      <div class="video-tile wide" data-video="assets/videos/society_video_3.mp4" data-poster="assets/posters/society_video_3.jpg">
-        <img src="assets/posters/society_video_3.jpg" alt="The Society Foodcourt — Bathinda" loading="lazy"/>
-        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
-        <div class="video-overlay"><span class="video-tag">03 · Bathinda</span><div class="video-meta"><div class="t">The Society · Bathinda</div><div class="s">Green City Square · AIIMS catchment</div></div></div>
-      </div>
-      <div class="video-tile wide" data-video="assets/videos/society_video_5.mp4" data-poster="assets/posters/society_video_5.jpg">
-        <img src="assets/posters/society_video_5.jpg" alt="The Society Foodcourt — Mukerian" loading="lazy"/>
-        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
-        <div class="video-overlay"><span class="video-tag">04 · Mukerian</span><div class="video-meta"><div class="t">The Society · Mukerian</div><div class="s">NH-1A · The first Society Foodcourt</div></div></div>
-      </div>
-      <div class="video-tile wide" data-video="assets/videos/society_video_6.mp4" data-poster="assets/posters/society_video_6.jpg">
-        <img src="assets/posters/society_video_6.jpg" alt="The Society Foodcourt — Hoshiarpur" loading="lazy"/>
-        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
-        <div class="video-overlay"><span class="video-tag">05 · Hoshiarpur</span><div class="video-meta"><div class="t">The Society · Hoshiarpur</div><div class="s">HT Mall · Three-state highway junction</div></div></div>
-      </div>
-      <div class="video-tile wide" data-video="assets/videos/society_video_7.mp4" data-poster="assets/posters/society_video_7.jpg">
-        <img src="assets/posters/society_video_7.jpg" alt="9W Bistro Brand Film" loading="lazy"/>
-        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
-        <div class="video-overlay"><span class="video-tag" style="background:#1B1D22;color:#F5A3A9">Brand · 9W Bistro</span><div class="video-meta"><div class="t">9W Bistro · Brand Film</div><div class="s">In-house multi-cuisine flagship</div></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section brands-section" id="brands">
   <div class="container">
     <div class="reveal" style="max-width:780px">
@@ -755,6 +763,85 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   </div>
 </section>
 
+<section class="section process-section" id="process">
+  <div class="container">
+    <div class="reveal" style="max-width:780px">
+      <span class="eyebrow">How We Build</span>
+      <h2 class="section-title">Eight stages, <em>from site to service.</em></h2>
+      <p class="section-lede">Every Society Foodcourt moves through the same eight stages — from site lock to opening day. In-house teams run civil, MEP, kitchen fabrication and brand fitout in parallel, not sequentially. The same playbook, every site.</p>
+    </div>
+    <div class="process-grid reveal-stagger">
+      <div class="pstep"><div class="num">01</div><h5>Locate</h5><p>Greenfield + brownfield site identification, catchment study, accessibility analysis.</p></div>
+      <div class="pstep"><div class="num">02</div><h5>Feasibility</h5><p>Catchment, population, traffic and brand-mix feasibility reports.</p></div>
+      <div class="pstep"><div class="num">03</div><h5>Brand Curate</h5><p>Right 9W in-house and partner brands chosen for the location.</p></div>
+      <div class="pstep"><div class="num">04</div><h5>Proposal</h5><p>Investor proposals with Minimum Guarantee + mutually agreeable lock-in.</p></div>
+      <div class="pstep"><div class="num">05</div><h5>Design</h5><p>Floor plans — kitchens, equipment, dishwashing, service, storage, seating, washrooms, fire corridors.</p></div>
+      <div class="pstep"><div class="num">06</div><h5>Build</h5><p>Civil, masonry, plumbing, welding, electrical, glazing, finishing — all in-house teams.</p></div>
+      <div class="pstep"><div class="num">07</div><h5>Launch</h5><p>Plug-and-play handover. Staff onboarded, SOPs live, brands ready for cash.</p></div>
+      <div class="pstep"><div class="num">08</div><h5>Operate</h5><p>Upkeep, maintenance, cleanliness, security and brand ops under 9W supervision.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section why-section">
+  <div class="container">
+    <div class="reveal" style="max-width:780px">
+      <span class="eyebrow">Why Partner With 9W</span>
+      <h2 class="section-title">What you get <em>when 9W runs it.</em></h2>
+    </div>
+    <div class="why-grid reveal-stagger">
+      <div class="why-card"><div class="ic"><i data-lucide="shield-check" style="width:22px;height:22px"></i></div><h5>Minimum Guarantee</h5><p>Honest, audited revenue models for landlords — a Minimum Guarantee promise backed by 12 years of stable tenancy.</p></div>
+      <div class="why-card"><div class="ic"><i data-lucide="zap" style="width:22px;height:22px"></i></div><h5>Plug-and-Play Launch</h5><p>Parallel-execution model gets brands from contract to cash quickly. In-house teams handle civil, MEP, kitchen and fitout together.</p></div>
+      <div class="why-card"><div class="ic"><i data-lucide="cpu" style="width:22px;height:22px"></i></div><h5>Tech Stack &amp; ERP</h5><p>Modern POS, central dashboards, CRM and loyalty wiring. Real-time governance for every site.</p></div>
+      <div class="why-card"><div class="ic"><i data-lucide="users" style="width:22px;height:22px"></i></div><h5>Shared Infra &amp; Ops</h5><p>Cleaning, waste, common-area maintenance, fire safety — run by 9W. Brands focus on the product.</p></div>
+      <div class="why-card"><div class="ic"><i data-lucide="eye" style="width:22px;height:22px"></i></div><h5>Real-Time Visibility</h5><p>CCTV-monitored kitchens, daily DSRs, audit-ready everywhere. Hygiene as a discipline, not a checkbox.</p></div>
+      <div class="why-card"><div class="ic"><i data-lucide="trending-up" style="width:22px;height:22px"></i></div><h5>Operating-Partner Depth</h5><p>Pan-India operating partner for Texas Smokehouse. Proven operator of global QSRs at scale.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section videos-section" id="videos">
+  <div class="container">
+    <div class="reveal" style="max-width:780px">
+      <span class="eyebrow">Society in Motion</span>
+      <h2 class="section-title">See the foodcourts <em>in action.</em></h2>
+      <p class="section-lede">On-the-floor footage from five operating Society Foodcourts. Tap any tile to play.</p>
+    </div>
+    <div class="video-grid reveal-stagger">
+      <div class="video-tile" data-video="assets/videos/society_video_1.mp4" data-poster="assets/posters/society_video_1.jpg">
+        <img src="assets/posters/society_video_1.jpg" alt="The Society Foodcourt — Elysian Tower, Ludhiana" loading="lazy"/>
+        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
+        <div class="video-overlay"><span class="video-tag">01 · Elysian Tower</span><div class="video-meta"><div class="t">The Society · Elysian Tower</div><div class="s">Ludhiana · Urban Premium</div></div></div>
+      </div>
+      <div class="video-tile" data-video="assets/videos/society_video_2.mp4" data-poster="assets/posters/society_video_2.jpg">
+        <img src="assets/posters/society_video_2.jpg" alt="The Society Foodcourt — Patiala" loading="lazy"/>
+        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
+        <div class="video-overlay"><span class="video-tag">02 · Patiala</span><div class="video-meta"><div class="t">The Society · Patiala</div><div class="s">City Centre · Home of Badmaash Kebabi</div></div></div>
+      </div>
+      <div class="video-tile wide" data-video="assets/videos/society_video_3.mp4" data-poster="assets/posters/society_video_3.jpg">
+        <img src="assets/posters/society_video_3.jpg" alt="The Society Foodcourt — Bathinda" loading="lazy"/>
+        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
+        <div class="video-overlay"><span class="video-tag">03 · Bathinda</span><div class="video-meta"><div class="t">The Society · Bathinda</div><div class="s">Green City Square · AIIMS catchment</div></div></div>
+      </div>
+      <div class="video-tile wide" data-video="assets/videos/society_video_5.mp4" data-poster="assets/posters/society_video_5.jpg">
+        <img src="assets/posters/society_video_5.jpg" alt="The Society Foodcourt — Mukerian" loading="lazy"/>
+        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
+        <div class="video-overlay"><span class="video-tag">04 · Mukerian</span><div class="video-meta"><div class="t">The Society · Mukerian</div><div class="s">NH-1A · The first Society Foodcourt</div></div></div>
+      </div>
+      <div class="video-tile wide" data-video="assets/videos/society_video_6.mp4" data-poster="assets/posters/society_video_6.jpg">
+        <img src="assets/posters/society_video_6.jpg" alt="The Society Foodcourt — Hoshiarpur" loading="lazy"/>
+        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
+        <div class="video-overlay"><span class="video-tag">05 · Hoshiarpur</span><div class="video-meta"><div class="t">The Society · Hoshiarpur</div><div class="s">HT Mall · Three-state highway junction</div></div></div>
+      </div>
+      <div class="video-tile wide" data-video="assets/videos/society_video_7.mp4" data-poster="assets/posters/society_video_7.jpg">
+        <img src="assets/posters/society_video_7.jpg" alt="9W Bistro Brand Film" loading="lazy"/>
+        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
+        <div class="video-overlay"><span class="video-tag" style="background:#1B1D22;color:#F5A3A9">Brand · 9W Bistro</span><div class="video-meta"><div class="t">9W Bistro · Brand Film</div><div class="s">In-house multi-cuisine flagship</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section founders-section" id="leadership">
   <div class="container">
     <div class="reveal" style="max-width:780px">
@@ -850,61 +937,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   </div>
 </section>
 
-<section class="section process-section">
-  <div class="container">
-    <div class="reveal" style="max-width:780px">
-      <span class="eyebrow">How We Build</span>
-      <h2 class="section-title">Eight stages, <em>from site to service.</em></h2>
-      <p class="section-lede">Every Society Foodcourt moves through the same eight stages — from site lock to opening day. In-house teams run civil, MEP, kitchen fabrication and brand fitout in parallel, not sequentially. The same playbook, every site.</p>
-    </div>
-    <div class="process-grid reveal-stagger">
-      <div class="pstep"><div class="num">01</div><h5>Locate</h5><p>Greenfield + brownfield site identification, catchment study, accessibility analysis.</p></div>
-      <div class="pstep"><div class="num">02</div><h5>Feasibility</h5><p>Catchment, population, traffic and brand-mix feasibility reports.</p></div>
-      <div class="pstep"><div class="num">03</div><h5>Brand Curate</h5><p>Right 9W in-house and partner brands chosen for the location.</p></div>
-      <div class="pstep"><div class="num">04</div><h5>Proposal</h5><p>Investor proposals with Minimum Guarantee + mutually agreeable lock-in.</p></div>
-      <div class="pstep"><div class="num">05</div><h5>Design</h5><p>Floor plans — kitchens, equipment, dishwashing, service, storage, seating, washrooms, fire corridors.</p></div>
-      <div class="pstep"><div class="num">06</div><h5>Build</h5><p>Civil, masonry, plumbing, welding, electrical, glazing, finishing — all in-house teams.</p></div>
-      <div class="pstep"><div class="num">07</div><h5>Launch</h5><p>Plug-and-play handover. Staff onboarded, SOPs live, brands ready for cash.</p></div>
-      <div class="pstep"><div class="num">08</div><h5>Operate</h5><p>Upkeep, maintenance, cleanliness, security and brand ops under 9W supervision.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section why-section">
-  <div class="container">
-    <div class="reveal" style="max-width:780px">
-      <span class="eyebrow">Why Partner With 9W</span>
-      <h2 class="section-title">What you get <em>when 9W runs it.</em></h2>
-    </div>
-    <div class="why-grid reveal-stagger">
-      <div class="why-card"><div class="ic"><i data-lucide="shield-check" style="width:22px;height:22px"></i></div><h5>Minimum Guarantee</h5><p>Honest, audited revenue models for landlords — a Minimum Guarantee promise backed by 12 years of stable tenancy.</p></div>
-      <div class="why-card"><div class="ic"><i data-lucide="zap" style="width:22px;height:22px"></i></div><h5>Plug-and-Play Launch</h5><p>Parallel-execution model gets brands from contract to cash quickly. In-house teams handle civil, MEP, kitchen and fitout together.</p></div>
-      <div class="why-card"><div class="ic"><i data-lucide="cpu" style="width:22px;height:22px"></i></div><h5>Tech Stack &amp; ERP</h5><p>Modern POS, central dashboards, CRM and loyalty wiring. Real-time governance for every site.</p></div>
-      <div class="why-card"><div class="ic"><i data-lucide="users" style="width:22px;height:22px"></i></div><h5>Shared Infra &amp; Ops</h5><p>Cleaning, waste, common-area maintenance, fire safety — run by 9W. Brands focus on the product.</p></div>
-      <div class="why-card"><div class="ic"><i data-lucide="eye" style="width:22px;height:22px"></i></div><h5>Real-Time Visibility</h5><p>CCTV-monitored kitchens, daily DSRs, audit-ready everywhere. Hygiene as a discipline, not a checkbox.</p></div>
-      <div class="why-card"><div class="ic"><i data-lucide="trending-up" style="width:22px;height:22px"></i></div><h5>Operating-Partner Depth</h5><p>Pan-India operating partner for Texas Smokehouse. Proven operator of global QSRs at scale.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="bistro-section">
-  <div class="container">
-    <div class="bistro-grid">
-      <div class="bistro-media reveal" data-video="assets/videos/society_video_7.mp4" data-poster="assets/posters/society_video_7.jpg">
-        <img src="assets/posters/society_video_7.jpg" alt="9W Bistro Brand Film"/>
-        <div class="video-play"><i data-lucide="play" style="width:28px;height:28px;margin-left:4px"></i></div>
-      </div>
-      <div class="reveal">
-        <span class="eyebrow">9W Bistro · Brand Film</span>
-        <h2 class="section-title" style="font-size:clamp(36px,4.4vw,60px);">In-house cuisine. <em>Operator discipline.</em></h2>
-        <p class="section-lede">9W Bistro is the in-house multi-cuisine workhorse running across Society sites. Consistent SOPs, a tested menu engine, and a delivery footprint that compounds month over month. Watch the brand film — shot on the floor at one of our Society foodcourts.</p>
-        <div style="margin-top:24px;"><a href="#brands" class="btn btn-dark">View Full Brand Portfolio <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <section class="section faq-section" id="faq">
   <div class="container faq-wrap">
     <div class="reveal">
@@ -934,15 +966,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   <div class="container">
     <div class="reveal" style="max-width:780px">
       <span class="eyebrow">Engage With Us</span>
-      <h2 class="section-title">Let's build the <em>next Society site.</em></h2>
-      <p class="section-lede">Tell us about your site, brand or partnership idea. We respond within 48 hours — and our leadership team personally reviews every franchise and real-estate inquiry.</p>
+      <h2 class="section-title">Tell us what you have. <em>We'll tell you what we'd do.</em></h2>
+      <p class="section-lede">A site, a brand, a franchise question or an outlet that needs fixing. We reply within 48 hours, and the leadership team reads every inquiry.</p>
     </div>
     <div class="contact-grid">
       <div class="contact-info reveal">
         <h4>Get in touch</h4>
-        <div class="contact-block"><div class="lbl">Partnerships, Franchise &amp; Real Estate</div><div class="val"><a href="mailto:info@9whospitality.com" style="color:var(--brand-deep)">info@9whospitality.com</a></div></div>
-        <div class="contact-block"><div class="lbl">Phone</div><div class="val">+91 93544 24787</div></div>
+        <div class="contact-block"><div class="lbl">Landlords, Brands, Franchise &amp; Consulting</div><div class="val"><a href="mailto:info@9whospitality.com" style="color:var(--brand-deep)">info@9whospitality.com</a></div></div>
+        <div class="contact-block"><div class="lbl">Phone</div><div class="val"><a href="tel:+919354424787" style="color:inherit;text-decoration:none">+91 93544 24787</a></div></div>
         <div class="contact-block"><div class="lbl">Instagram</div><div class="val"><a href="https://www.instagram.com/9w_hospitality" target="_blank" rel="noopener" style="color:var(--brand-deep)">@9w_hospitality</a></div></div>
+        <div class="next-steps"><h4>What happens next</h4><ol><li><b>Within 48 hours</b> someone from the leadership team calls or writes back.</li><li><b>First conversation</b> about your site, brand or outlet: what you have and what you want.</li><li><b>A plain answer</b> on whether we can help, how we would do it and what it would take.</li></ol></div>
       </div>
       <form class="contact-form reveal" id="contact-form" method="POST" novalidate>
         <div class="form-row">
@@ -981,6 +1014,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
     </div>
   </div>
 </section>
+
+<div class="mbar" id="mbar"><a href="tel:+919354424787" class="mb-call">Call us</a><a href="#contact" class="mb-go">Send an inquiry</a></div>
 
 <footer class="footer">
   <div class="container">
@@ -1128,8 +1163,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
         contactStatus.classList.add('visible', 'success');
         contactForm.reset();
       } catch (err) {
-        contactStatus.textContent = "Couldn't send right now. Please email info@9whospitality.com directly.";
-        contactStatus.classList.add('visible', 'error');
+        const f = new FormData(contactForm);
+        const g = k => (f.get(k) || '').toString().trim();
+        const lines = ['Inquiry type: ' + g('inquiry_type'), 'Name: ' + (g('first_name') + ' ' + g('last_name')).trim(), 'Email: ' + g('email'), 'Phone: ' + g('phone'), 'City: ' + g('city'), '', g('message')];
+        const href = 'mailto:info@9whospitality.com?subject=' + encodeURIComponent('Website inquiry: ' + (g('inquiry_type') || 'General')) + '&body=' + encodeURIComponent(lines.join('\n'));
+        contactStatus.innerHTML = 'Your email app should open with this inquiry filled in. Press send there and it reaches us. If nothing opened, <a href="' + href + '">tap here</a> or call +91 93544 24787.';
+        contactStatus.classList.add('visible', 'success');
+        window.location.href = href;
       } finally {
         contactSubmit.disabled = false;
         contactSubmit.innerHTML = originalLabel;
@@ -1160,6 +1200,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 </script>
 <script>
 document.querySelectorAll('[data-inquiry]').forEach(function(a){a.addEventListener('click',function(){var sel=document.getElementById('type');if(!sel)return;[].forEach.call(sel.options,function(o){if(o.text===a.dataset.inquiry)sel.value=o.value||o.text;});});});
+</script>
+<script>
+(function(){var b=document.getElementById('mbar'),c=document.getElementById('contact');if(!b)return;function f(){var r=c?c.getBoundingClientRect():null;var inC=r&&r.top<innerHeight&&r.bottom>0;b.classList.toggle('show',scrollY>500&&!inC);}addEventListener('scroll',f,{passive:true});f();})();
 </script>
 </body>
 </html>
