@@ -456,6 +456,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 }
 @media (max-width:980px){.nav,.nav.scrolled{backdrop-filter:none;-webkit-backdrop-filter:none;}.nav.scrolled{background:#fff;}.nav-links.open{height:100dvh;}}
 @media (max-width:980px){.menu-toggle{position:relative;z-index:101;}.menu-toggle[aria-expanded="true"],.nav.scrolled .menu-toggle[aria-expanded="true"]{color:#fff;}}
+.careers-band{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:56px 0;}
+.careers-in{display:grid;grid-template-columns:minmax(0,1.4fr) auto;gap:40px;align-items:center;}
+.careers-band h3{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,3.6vw,44px);letter-spacing:.02em;text-transform:uppercase;line-height:1.05;margin:12px 0 10px;}
+.careers-band p{color:var(--muted);font-size:16px;max-width:60ch;}
+.careers-cta{display:grid;gap:10px;justify-items:start;}
+.careers-cta span{font-size:13px;color:var(--muted);}
+@media (max-width:860px){.careers-in{grid-template-columns:minmax(0,1fr);gap:22px;}}
 </style>
 </head>
 <body>
@@ -933,6 +940,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   </div>
 </section>
 
+<section class="careers-band" id="careers">
+  <div class="container careers-in reveal">
+    <div><span class="eyebrow">Careers</span><h3>Work where the counters are busy.</h3><p>We hire for kitchens, counters, court management and the central office, across Punjab. If you run a shift well, we want to hear from you.</p></div>
+    <div class="careers-cta"><a class="btn btn-primary" href="mailto:hr@9whospitality.com?subject=Job%20application">Write to hr@9whospitality.com</a><span>Send your CV and the city you want to work in.</span></div>
+  </div>
+</section>
+
 <section class="section faq-section" id="faq">
   <div class="container faq-wrap">
     <div class="reveal">
@@ -953,6 +967,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
       <div class="cta-row">
         <a href="#contact" class="btn btn-primary">Start a Conversation <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
         <a href="mailto:info@9whospitality.com" class="btn btn-ghost">Email Sales</a>
+        <a href="assets/9W-Hospitality-Profile.pdf" class="btn btn-ghost" download>Download company profile (PDF)</a>
       </div>
     </div>
   </div>
@@ -1038,6 +1053,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
           <li><a href="#about">About 9W</a></li>
           <li><a href="#verticals">What We Do</a></li>
           <li><a href="#consulting">Consulting</a></li>
+          <li><a href="assets/9W-Hospitality-Profile.pdf" download>Company profile (PDF)</a></li>
           <li><a href="#map">The Network</a></li>
           <li><a href="#brands">Brand Portfolio</a></li>
           <li><a href="#leadership">Leadership</a></li>
@@ -1050,7 +1066,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
           <li><a href="#contact">Franchise Inquiry</a></li>
           <li><a href="#contact">Real Estate</a></li>
           <li><a href="#contact">Investor Relations</a></li>
-          <li><a href="#contact">Careers</a></li>
+          <li><a href="#careers">Careers</a></li>
           <li><a href="#contact">Media &amp; Press</a></li>
         </ul>
       </div>
